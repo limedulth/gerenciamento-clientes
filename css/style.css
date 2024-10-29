@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* TELA LOGIN  */
+.container {
+    background: rgb(2,0,36);
+    background-image: url('../img/bg-login.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.logo {
+    color: white;
+    text-align: center;
+    margin: 0px 40px 40px 40px;
+}
+div.logo > h1 {
+
+    font-size: 5em;
+
+}
+div.logo > h1 > span {
+
+    color: rgb(255, 143, 68);
+
+}
+
+.card-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 40px 10px 40px 10px;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border: 1px solid #ffffff7e;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+div > input {
+    width: 90%;
+    height: 40px;
+    margin: 3px 0px 20px 0px;
+    border-radius: 5px;
+    border: 1px solid #ffffff7e;
+    outline: none;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+
+    
+}
+::placeholder {
+    color: rgb(238, 238, 238);
+    opacity: 1; 
+    text-align: center;
+    font-style: italic;
+  }
+div > label {
+    font-size: 1.2em;
+    color: white;
+   
+}
+
+.card-login a {
+
+    margin: 0px 20px 0px 0px;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-align: end;
+    color: white;
+}
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    font-size: 1em;
+    background: rgb(255, 143, 68);
+    color: white;
+
+
+
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    color: rgb(146, 146, 146);
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+.footer > p > span {
+    color: rgb(255, 143, 68);
+
+}
+
+/* TELA LOGIN CIMA  */
+
+/* INICIO  */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+    
+}
+
+.sidebar {
+    position: fixed;
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: -250px;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+
+.sidebar.active {
+    margin-left: 0px;
+    
+
+}
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+.overlay.hidden {
+    display: none;
+}
+
+
+.sub-menu-caixa {
+    display: none;
+
+}
+.sub-menu-cadastro {
+    display: none;
+}
+
+.showSub {
+    display: block;
+}
+.hiddenSub{
+    display: none;
+}
+
+.icon-sidebar > span {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.menuTop{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    width: 100vw;
+    height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid f1f1f1;
+}
+.numeroNotify {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+.numeroNotify > p {
+    color: white;
+}
+
+.item-logo {
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    background-color: white;
+
+    
+}
+.item-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 30px 8px 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(249,249,249,1) 35%, rgba(255,255,255,1) 100%);
+    border-top: 1px solid #f1f1f1;
+}
+
+.item-menu-baixo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    padding: 13px 0px;
+    cursor: pointer;
+    background-color: rgb(228, 3, 3);
+    width: 100%;
+    color: white;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.item-menu-baixo:hover{
+    background-color: rgb(168, 4, 4);
+
+}
+
+.item-menu:hover {
+
+    background: rgb(255, 143, 68);
+    color: white;
+
+}
+.item-sub-menu {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 1em;
+    cursor: pointer;
+
+    
+}
+
+.section1 {
+    padding: 15px 10px 0px 10px;
+}
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.filtros > div > a {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 8px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section2 {
+    padding: 10px;
+    display: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.section2 > h2, p{
+    margin-left: 10px;
+}
+.main-card {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 100px;
+    background-color: white;
+    border-left: 4px solid rgb(255, 143, 68);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.card > p {
+    font-size: 1.3em;
+}
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.footer {
+    position: relative;
+}
+.menu-footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    bottom: 0;
+    border-radius: 5px;
+    border-top: 1px solid #e7e7e7;
+    background-color: #fff;
+
+}
+
+.item-menu-footer > a {
+    color: #929292;
+}
+.item-menu-footer {
+    display: flex;
+    align-items: center;
+    
+}
+.add-menu-footer {
+    position: relative;
+    font-size: 60px;
+    top: -8px;
+    color: rgb(255, 143, 68);
+}
+.card-notify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 70%;
+    border: 1px solid #9292923a;
+    border-radius: 5px;
+}
+.btnNotify {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 90%;
+
+    
+}
+.card-notify > p > .venc {
+    color: red;
+}
+.btnNotify > a {
+    color: white;
+    text-decoration: none;
+}
+.btnReceber {
+    padding: 8px;
+    background-color: green;
+    border-radius: 5px;
+
+}
+.btnCobrar {
+    padding: 8px;
+    background-color: rgb(255, 143, 68);
+    border-radius: 5px;
+
+}
+
+.showRel {
+    display: block;
+}
+
+
+
+
+
+
