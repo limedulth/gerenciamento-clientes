@@ -160,8 +160,22 @@ main {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.329);
 }
+.overlayModal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+}
 .overlay.hidden {
     display: none;
+}
+.overlayModal.hidden {
+    display: none;
+}
+.overlayModal.show {
+    z-index: 0;
+    display: block;
 }
 
 
@@ -198,9 +212,11 @@ main {
 .numeroNotify {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    text-align: center;
     background-color: red;
     position: absolute;
     right: 5px;
@@ -208,6 +224,49 @@ main {
 }
 .numeroNotify > p {
     color: white;
+    margin: 0;
+}
+.modalNotify {
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+    border-radius: 10px 0px 10px 10px;
+    right: 23px;
+    top: 30px;
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    z-index: 3;
+
+}
+.showModalnotify {
+    display: flex;
+}
+.hiddenModalnotify {
+    display: none;
+}
+
+.modalNotify > div > h4 {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.modal-content {
+    width: 100%;
+    padding: 10px 10px;
+    border-top: 1px solid #f2f2f2;
+
+}
+.modal-content:hover {
+    background-color: #f2f2f2;
+}
+.p-cliqueNotify {
+    color: grey;
+    font-size: small;
+    text-align: end;
 }
 
 .item-logo {
@@ -286,9 +345,10 @@ main {
 }
 .section2 {
     padding: 10px;
-    display: none;
+    display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 80px;
 }
 .section2 > h2, p{
@@ -364,7 +424,9 @@ section {
     align-items: center;
     padding: 5px;
     width: 70%;
+    background-color: white;
     border: 1px solid #9292923a;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px;
     border-radius: 5px;
 }
 .btnNotify {
@@ -383,6 +445,7 @@ section {
 .btnNotify > a {
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 .btnReceber {
     padding: 8px;
