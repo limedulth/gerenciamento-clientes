@@ -9,7 +9,7 @@
 
     
 </head>
-<body>
+<body onload="carregar()">
     <main>
     <nav class="sidebar" id="menuSidebar">
         <div class="item-logo">Gen+</div>
@@ -56,19 +56,95 @@
                 </div>
                 <div class="modal-content">
                     <h5>Novo cliente cadastrado:</h5>
-                    <p>José Alves Neto solicita um valor de R$ 1.000,00.</p>
+                    <p>Ana Souza solicita um valor de R$ 750,00.</p>
                     <p class="p-cliqueNotify">Clique para verificar.</p>
                 </div> 
                 <div class="modal-content">
                     <h5>Novo cliente cadastrado:</h5>
-                    <p>José Alves Neto solicita um valor de R$ 1.000,00.</p>
+                    <p>Marcos Silva solicita um valor de R$ 2.500,00.</p>
                     <p class="p-cliqueNotify">Clique para verificar.</p>
                 </div>   
                 <div class="modal-content">
                     <h5>Novo cliente cadastrado:</h5>
-                    <p>José Alves Neto solicita um valor de R$ 1.000,00.</p>
+                    <p>Clara Mendes solicita um valor de R$ 1.200,00.</p>
                     <p class="p-cliqueNotify">Clique para verificar.</p>
                 </div>
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Leonardo Batista solicita um valor de R$ 3.000,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div> 
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Patrícia Nogueira solicita um valor de R$ 850,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>   
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>João Pereira solicita um valor de R$ 1.500,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Mariana Lima solicita um valor de R$ 900,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div> 
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Pedro Rodrigues solicita um valor de R$ 1.750,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>   
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Bruna Martins solicita um valor de R$ 2.300,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Lucas Albuquerque solicita um valor de R$ 1.050,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div> 
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Gabriela Costa solicita um valor de R$ 1.980,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>   
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Diego Oliveira solicita um valor de R$ 620,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Isabela Farias solicita um valor de R$ 2.150,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div> 
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Renato Gomes solicita um valor de R$ 1.800,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>   
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Sofia Mendes solicita um valor de R$ 970,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Felipe Silva solicita um valor de R$ 1.650,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div> 
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Laura Freitas solicita um valor de R$ 1.100,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>   
+                <div class="modal-content">
+                    <h5>Novo cliente cadastrado:</h5>
+                    <p>Vinícius Barros solicita um valor de R$ 700,00.</p>
+                    <p class="p-cliqueNotify">Clique para verificar.</p>
+                </div>
+                
                   
                             
             </div>
@@ -84,12 +160,34 @@
         </section>
         </div>
         <div class="filtros">
-            <div id="btnDiario"><a href="#">Diário</a></div>
-            <div id="btnSemanal"><a href="#">Semanal</a></div>
-            <div id="btnMensal"><a href="#">Mensal</a></div>
-            <div id="btnTrimestral"><a href="#">Trimestral</a></div>
-            <div id="btnSemestral"><a href="#">Semestral</a></div>
-            <div id="btnAnual"><a href="#">Anual</a></div>
+            <div class="filtroMes">
+                <div class="filtroElement">
+                    <div class="label"><label for="selectRel">Dia</label></div>
+                    <input type="date" name="dataMes" id="">
+                </div>
+                <div class="filtroElement">
+                    <div class="label"><label for="selectRel">Mês</label></div>
+                    <select name="" id="">
+                        <option value="">Janeiro</option>
+                        <option value="">Fevereiro</option>
+                        <option value="">Março</option>
+                        <option value="">Abril</option>
+                        <option value="">Maio</option>
+                        <option value="">Junho</option>
+                        <option value="">Julho</option>
+                        <option value="">Agosto</option>
+                        <option value="">Setembro</option>
+                        <option value="">Outubro</option>
+                        <option value="">Novembro</option>
+                        <option value="">Dezembro</option>
+                    </select>
+                </div>
+                <div class="filtroElement">
+                    <div class="label"><label for="selectRel">Ano</label></div>
+                    <input type="date" name="dataMes" id="">
+                </div>
+                
+            </div>
         </div>
             <div class="section2" id="relAnual">
                 <h2>Anual</h2>
@@ -167,9 +265,50 @@
                     <div class="card"><p>R$ 99.000,00</p></div>
                     <div class="card"><p>R$ 99.000,00</p></div>
                 </div>
+                </div>
+                <div class="tabela">
+                    <table>
+                        <caption>
+                          Front-end web developer course 2021
+                        </caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">Person</th>
+                            <th scope="col">Most interest in</th>
+                            <th scope="col">Age</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Chris</th>
+                            <td>HTML tables</td>
+                            <td>22</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Dennis</th>
+                            <td>Web accessibility</td>
+                            <td>45</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Sarah</th>
+                            <td>JavaScript frameworks</td>
+                            <td>29</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Karen</th>
+                            <td>Web performance</td>
+                            <td>36</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th scope="row" colspan="2">Average age</th>
+                            <td>33</td>
+                          </tr>
+                        </tfoot>
+                      </table>
 
             </div>
-
             </div>
     </main>
 
